@@ -4,9 +4,9 @@ using namespace std;
 class Child
 {
 private:
-    string name;
-    string surname;
-    int age;
+    string  name;
+    string  surname;
+    int     age;
 public:
     Child()
     {
@@ -32,8 +32,8 @@ public:
  
 int main()
 { 
-    Child first_child;
-    Child second_child("Pavel", "Petrov", 16);
+    Child   first_child;
+    Child   second_child("Pavel", "Petrov", 16);
     first_child.get_Data();
     second_child.get_Data();
     return (0);

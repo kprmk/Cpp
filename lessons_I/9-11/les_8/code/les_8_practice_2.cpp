@@ -48,7 +48,9 @@ public:
     }
     void    get_Data_dec()
     {
-        cout << first / (float)second << endl; 
+        cout << endl;
+        cout << this->first << " " << this->second << endl;
+         cout << first / (float)second << endl; 
     }
     fraction    operator+(fraction b)
     {
@@ -79,7 +81,7 @@ public:
 int main()
 { 
     fraction    first(5, 25);
-    fraction    second(1000, 100);
+    fraction    second(100, 100);
     fraction    *pointer;
  
     first.get_Data_origin();
@@ -89,7 +91,8 @@ int main()
     pointer->get_Data_origin();
     pointer->get_Data_dec();
 
-    (first + second).get_Data_origin();
+    cout << "Sum: ";
+    (first + second).get_Data_dec();
 
     return (0);
 }

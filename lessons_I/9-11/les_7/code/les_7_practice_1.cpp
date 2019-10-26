@@ -34,7 +34,14 @@ int main()
 { 
     Child   first_child;
     Child   second_child("Pavel", "Petrov", 16);
+    Child   *pointer;
+
     first_child.get_Data();
     second_child.get_Data();
+
+    pointer = &second_child;
+    pointer->set_Data("Dima", "Ivanov", 18);
+    pointer->get_Data();
+    
     return (0);
 }

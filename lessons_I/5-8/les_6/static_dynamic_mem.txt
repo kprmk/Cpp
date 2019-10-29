@@ -1,0 +1,2 @@
+https://en.cppreference.com/w/cpp/language/new
+https://en.cppreference.com/w/cpp/language/delete

@@ -10,7 +10,7 @@ using std::endl;
 class spiral_matrix
 {
 private:
-    int ** pointer;
+    int **pointer;
     int n;
 public:
 

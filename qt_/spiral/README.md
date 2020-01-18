@@ -1,2 +1,0 @@
-# spiral
-spiral matrix

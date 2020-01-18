@@ -24,7 +24,7 @@ void    search(vector<int> subset, int n, int k, int *counter)
 int main()
 {    
     vector<int> subset;
-    int n = 2;
+    int n = 3;
     int counter = 0;
     search(subset, n, 1, &counter);
 

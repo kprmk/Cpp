@@ -2,15 +2,9 @@
 
 int main()
 {
-    int n;
-    
-    n = 0;
-    cout << "Please, enter size of\nsquare matrix (one number)" << endl;
-    std::cin >> n;
-    spiral_matrix mat(n);
+    spiral_matrix mat;
     mat.matrix_circle_around();
     mat.matrix_print();
-
     return 0;
 }
 

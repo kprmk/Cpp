@@ -10,16 +10,15 @@ using std::endl;
 class spiral_matrix
 {
 private:
-    int **pointer;
-    int n;
-public:
+    int **matrix;
+    int size;
 
-    spiral_matrix(int n = 5);
+public:
+    spiral_matrix();
     ~spiral_matrix();
 
     void matrix_print();
     void matrix_circle_around();
-
 };
 
 #endif // SPIRAL_MATRIX_H

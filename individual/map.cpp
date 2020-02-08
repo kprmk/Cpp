@@ -37,9 +37,9 @@ void ceasar_cypher::code()
     {
         if (to_code[i]  >= 'a' && to_code[i] <= 'z')
         {
-            if (to_code[i] + shift > 'z')
-                to_code[i] -= 26;
             to_code[i] += shift;
+            if (to_code[i] > 'z')
+                to_code[i] -= 26;
         }
     }
 }
@@ -75,7 +75,7 @@ AlGORITHM
 3.  MOVE MAIN_CHAR
 
 ####
-#% #
+#$ #
 #  #
 ####
 

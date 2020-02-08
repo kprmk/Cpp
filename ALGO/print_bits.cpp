@@ -14,21 +14,6 @@ void    print_bits(int num, int size_in_byte)
     cout << endl;
 }
 
-int     put_bit(int num, int pos)
-{
-    return (num | 1 << pos);
-}
-
-int     del_bit(int num, int pos)
-{
-    return (num & ~(1 << pos));
-}
-
-int     rev_bit(int num, int pos)
-{
-    return (num ^ (1 << pos));
-}
-
 int main()
 {
     int     a = 0;

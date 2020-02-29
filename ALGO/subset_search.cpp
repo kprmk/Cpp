@@ -1,16 +1,18 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
+
 
 void    search(vector<int> subset, int n, int k, int *counter)
 {
     if (k == n + 1)
     {
-        *counter += 1;
-        printf("%d -> { ", *counter);
+        (*counter)++;
+        cout << *counter << " ->\t{ ";
         for (auto i: subset)
-            printf("%d ", i);
-        printf("}\n");
+            cout << i << " ";
+        cout << "}" << endl;
     }
     else
     {
@@ -21,13 +23,18 @@ void    search(vector<int> subset, int n, int k, int *counter)
     }
 }
 
-int main()
-{    
+void subset(int n)
+{
     vector<int> subset;
-    int n = 3;
     int counter = 0;
     search(subset, n, 1, &counter);
+}
 
+int main()
+{
+    int amount;
+    cin >> amount;
+    subset(amount);
     return (0);
 }
 

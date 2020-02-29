@@ -26,7 +26,7 @@ void create_map(int height, int width, char border, int x, int y)
                     }
                     else
                     {
-                        cout << " ";   
+                        cout << " ";
                     }
                 }
             }

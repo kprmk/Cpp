@@ -1,40 +1,28 @@
 #include <iostream>
-#include <cstdlib> // for rand() && srand()
-#include <ctime>   // time()
+#include <cstdlib>
+#include <cstdio>
+#include <ctime>
 using namespace std;
 
-void ceasar_cypher()
+string mix(string input)
 {
-    string  input;
-    int     shift;
-    cout << "Enter string to code:" << endl;
-    getline(cin, input); // cin >> input;
-    cout << "Enter number to shift: ";
-    cin >> shift;
-    shift = shift % 26;
-    cout << input << endl;
-    for (int i = 0; input[i] != '\0'; i++)
-    {
-        if (input[i] >= 'a' && input[i] <= 'z')
-        {
-            if (input[i] + shift > 'z')
-            {
-                input[i] = input[i] - 26;
-            }
-            input[i] = input[i] + shift;
-        }
-    }
-    cout << input << endl;
+	char temp;
+
+	for(int first_let, second_let, i = 0; i < input.length() / 2; i++)
+	{
+		first_let = rand() % input.length();
+		second_let = rand() % input.length();
+
+		temp = input[first_let];
+		input[first_let] = input[second_let];
+		input[second_let] = temp;
+	}
+	return input;
 }
 
 int main()
 {
-    // ceasar_cypher();
-    srand(time(0));
-    for (int j = 0; j < 1000; j++)
-    {
-        for (int i = 0; i < 100000000; i++) ;
-        cout << rand() % 6 + 1 << endl  ;   
-    }
+	srand(time(0));
+	cout << mix("123456789") << endl;
     return (0);
 }

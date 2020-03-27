@@ -19,7 +19,7 @@ int main()
     }
     for(vector<vector<int> >::iterator it = double_vec.begin(); it != double_vec.end(); ++it)
     {
-        for(vector<int>::iterator it2 = (*it).begin(); it2 != (*it).end(); ++it2)
+        for(vector<int>::iterator it2 = it->begin(); it2 != it->end(); ++it2)
             cout << *it2 << " ";
         cout << endl;
     }

@@ -4,7 +4,7 @@ using namespace std;
 
 void    search_perm(vector<int> *vec, vector<bool> *chosen, int n, int *c)
 {
-    if (vec->size() == n)
+    if ((*vec).size() == n)
     {
         (*c)++;
         cout << *c << " ->\t{ ";
@@ -14,6 +14,7 @@ void    search_perm(vector<int> *vec, vector<bool> *chosen, int n, int *c)
     }
     else
     {
+        //  num of pos -> i
         for (int i = 1; i <= n; i++)
         {
             if (chosen->at(i) == true)
@@ -34,7 +35,6 @@ void permutation(int n)
     int counter = 0;
     search_perm(&vec, &is_empty, n, &counter);
 }
-
 
 int main()
 {

@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 void    search(vector<int> subset, int n, int k, int *counter)
 {
     if (k == n + 1)
@@ -37,4 +36,3 @@ int main()
     subset(amount);
     return (0);
 }
-

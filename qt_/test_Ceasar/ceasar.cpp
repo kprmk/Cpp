@@ -1,18 +1,18 @@
-#include "ceasar_cypher.h"
+#include "ceasar.h"
 
-ceasar_cypher::ceasar_cypher()
+ceasar::ceasar()
 {
     this->input = "";
     this->shift = 1;
 }
 
-ceasar_cypher::ceasar_cypher(string input, int shift = 1)
+ceasar::ceasar(string input, int shift = 1)
 {
     this->input = input;
     this->shift = shift;
 }
 
-void ceasar_cypher::code()
+void ceasar::code()
 {
     int shift;
     int len_of_input;
@@ -24,14 +24,16 @@ void ceasar_cypher::code()
         if (input[i] >= 'a' && input[i] <= 'z')
         {
             if ((int)(input[i] + shift) > 122)
+            {
                 input[i] += shift - 26;
+            }
             else
                 input[i] += shift;
         }
     }
 }
 
-void ceasar_cypher::decode()
+void ceasar::decode()
 {
     int shift;
     int len_of_input;
@@ -52,12 +54,12 @@ void ceasar_cypher::decode()
     }
 }
 
-string ceasar_cypher::getter()
+string ceasar::getter()
 {
     return (this->input);
 }
 
-void ceasar_cypher::setter(string str, int num)
+void ceasar::setter(string str, int num)
 {
     this->input = str;
     this->shift = num;

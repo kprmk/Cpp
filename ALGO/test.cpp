@@ -1,47 +1,75 @@
+// #include <iostream>
+// #include <vector>
+
+// using namespace std;
+
+// void print_vec(vector<int> ipt)
+// {
+// 	for (auto i : ipt)
+// 		cout << i << " ";
+// 	cout << endl;
+// }
+
+// bool check_q(vector<int> x, vector<int> y)
+// {
+// 	for (int i = 0; i < x.size() - 1; i++)
+// 	{
+// 		for (int j = i + 1; i < x.size(); j++)
+// 		{
+// 			if (x[i] == x[j] || y[i] == y[j] || 
+// 				abs(x[i] - x[j]) == abs(y[i] - y[j]))
+// 				return (true);
+// 		}
+// 	}
+// 	return (false);
+// }
+
+// int main()
+// {
+// 	int size;
+// 	vector<int> x;
+// 	vector<int> y;
+// 	string ans;
+	
+// 	getline(cin, ans);
+// 	size = ans[0] - '0';
+// 	for (int i = 0; i < size; i++)
+// 	{
+// 		getline(cin, ans);
+// 		x.push_back(ans[0] - '0');
+// 		y.push_back(ans[2] - '0');
+// 	}
+
+// 	print_vec(x);
+// 	print_vec(y);
+
+// 	cout << (check_q(x, y) ? "There was an error\n" : "It's OK\n");
+
+// 	return (0);
+// }
+
+
 #include <iostream>
-#include <vector>
 
-using namespace std;
-
-
-void permutation_inside(vector<int> *vec, vector<bool> *is_empty, int n, int *c)
+class human
 {
-	if (vec->size() == n)
-	{
-		(*c)++;
-		cout << *c << " -> { ";
-		for (auto i : *vec)
-			cout << i << " ";
-		cout << "}" << endl;
-	}
-	else
-	{
-		for (int i = 0; i < n; i++)
-		{
-			if ((*is_empty)[i] == true)
-				continue;
-			(*is_empty)[i] = true;
-			(*vec).push_back(i + 1);
-			permutation_inside(vec, is_empty, n, c);
-			(*is_empty)[i] = false;
-			vec->pop_back();
-		}
-	}
-}
+	private:
 
-void permutation(int n)
-{
-	int counter = 0;
-	vector<int> vec;
-	vector<bool> is_empty(n, false);
-	// start recursion
-	permutation_inside(&vec, &is_empty, n, &counter);
-}
+	std::string name;
+	int age;
+
+	void inside()
+	{
+
+	}
+
+	public:
+
+};
 
 int main()
 {
-	int size;
-	cin >> size;
-	permutation(size);
-    return (0);
+	human test;
+	test.
+	return (0);
 }

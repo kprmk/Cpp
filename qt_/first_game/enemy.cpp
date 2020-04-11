@@ -1,6 +1,8 @@
 #include "enemy.h"
 
-Enemy::Enemy(): QObject(), QGraphicsRectItem()
+extern Game * game;
+
+Enemy::Enemy(QGraphicsItem *parent): QObject(), QGraphicsRectItem(parent)
 {
     int random_pos = rand() % 800; // ?
     setPos(random_pos, 10);
@@ -23,6 +25,8 @@ void Enemy::move()
 
     if (pos().y() + rect().height() < 0)
     {
+//        game->health->decrease();
+
         scene()->removeItem(this);
         delete this;
     }

@@ -1,19 +1,13 @@
 #ifndef ENEMY_H
 #define ENEMY_H
 
-#include <QGraphicsRectItem>
-#include <QGraphicsScene>
-#include <QDebug>
-#include <QTimer>
-#include <QObject>
-
-#include <stdlib.h>
+#include "game.h"
 
 class Enemy: public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 public:
-    Enemy();
+    Enemy(QGraphicsItem * parent = 0);
 public slots:
     void move();
 };

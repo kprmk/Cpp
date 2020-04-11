@@ -1,20 +1,13 @@
 #ifndef BULLET_H
 #define BULLET_H
 
-#include <QGraphicsRectItem>
-#include <QGraphicsScene>
-#include <QDebug>
-#include <QTimer>
-#include <QObject>
-#include <QList>
-
-#include "enemy.h"
+#include "game.h"
 
 class Bullet: public QObject, public QGraphicsRectItem
 {
     Q_OBJECT
 public:
-    Bullet();
+    Bullet(QGraphicsItem *parent = 0);
 public slots:
     void move();
 };

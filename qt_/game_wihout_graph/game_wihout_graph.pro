@@ -27,6 +27,7 @@ HEADERS += \
     bullet.h \
     enemy.h \
     game.h \
+    headings_libs.h \
     player.h \
     score.h
 
@@ -36,3 +37,6 @@ FORMS +=
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    pics/src.qrc

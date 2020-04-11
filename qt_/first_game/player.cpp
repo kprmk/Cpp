@@ -1,11 +1,11 @@
-#include "rect_m.h"
+#include "player.h"
 
-rect_m::rect_m(): QObject(), QGraphicsRectItem()
+Player::Player(QGraphicsItem *parent): QGraphicsRectItem(parent)
 {
     qDebug() << "I've been created!";
 }
 
-void rect_m::keyPressEvent(QKeyEvent *event)
+void Player::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Left)
     {
@@ -26,7 +26,7 @@ void rect_m::keyPressEvent(QKeyEvent *event)
     }
 }
 
-void rect_m::spawn()
+void Player::spawn()
 {
     // create enemy
     Enemy * nmy = new Enemy();

@@ -4,6 +4,7 @@ release/game.o
 release/main.o
 release/player.o
 release/score.o
+release/qrc_pic.o
 release/qrc_src.o
 release/moc_bullet.o
 release/moc_enemy.o

@@ -4,6 +4,7 @@ debug/game.o
 debug/main.o
 debug/player.o
 debug/score.o
+debug/qrc_pic.o
 debug/qrc_src.o
 debug/moc_bullet.o
 debug/moc_enemy.o

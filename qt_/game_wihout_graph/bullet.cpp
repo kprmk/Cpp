@@ -44,7 +44,8 @@ void Bullet::move()
     }
 
     // if there was no collision with an Enemy, move the bullet forward
-    setPos(x(),y()-10);
+    setPos(x(),y() - 10);
+
     // if the bullet is off the screen, destroy it
     if (pos().y() + this->pixmap().height() < 0)
     {
@@ -52,3 +53,5 @@ void Bullet::move()
         delete this;
     }
 }
+
+

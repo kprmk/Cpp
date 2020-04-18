@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QPixmap pix(":/pic/pic/pic.png");
-    ui->pic->setPixmap(pix);
+    ui->pix->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()

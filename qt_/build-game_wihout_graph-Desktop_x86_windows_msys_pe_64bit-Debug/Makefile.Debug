@@ -264,6 +264,8 @@ debug/moc_bullet.cpp: ../game_wihout_graph/bullet.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		debug/moc_predefs.h \
 		C:/Qt/5.12.6/mingw73_64/bin/moc.exe
 	C:\Qt\5.12.6\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/mi/Desktop/cpp/qt_/build-game_wihout_graph-Desktop_x86_windows_msys_pe_64bit-Debug/debug/moc_predefs.h -IC:/Qt/5.12.6/mingw73_64/mkspecs/win32-g++ -IC:/Users/mi/Desktop/cpp/qt_/game_wihout_graph -IC:/Qt/5.12.6/mingw73_64/include -IC:/Qt/5.12.6/mingw73_64/include/QtWidgets -IC:/Qt/5.12.6/mingw73_64/include/QtGui -IC:/Qt/5.12.6/mingw73_64/include/QtANGLE -IC:/Qt/5.12.6/mingw73_64/include/QtCore -I. -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ..\game_wihout_graph\bullet.h -o debug\moc_bullet.cpp
@@ -395,6 +397,8 @@ debug/moc_enemy.cpp: ../game_wihout_graph/enemy.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		debug/moc_predefs.h \
 		C:/Qt/5.12.6/mingw73_64/bin/moc.exe
 	C:\Qt\5.12.6\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/mi/Desktop/cpp/qt_/build-game_wihout_graph-Desktop_x86_windows_msys_pe_64bit-Debug/debug/moc_predefs.h -IC:/Qt/5.12.6/mingw73_64/mkspecs/win32-g++ -IC:/Users/mi/Desktop/cpp/qt_/game_wihout_graph -IC:/Qt/5.12.6/mingw73_64/include -IC:/Qt/5.12.6/mingw73_64/include/QtWidgets -IC:/Qt/5.12.6/mingw73_64/include/QtGui -IC:/Qt/5.12.6/mingw73_64/include/QtANGLE -IC:/Qt/5.12.6/mingw73_64/include/QtCore -I. -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ..\game_wihout_graph\enemy.h -o debug\moc_enemy.cpp
@@ -526,6 +530,8 @@ debug/moc_player.cpp: ../game_wihout_graph/player.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		debug/moc_predefs.h \
 		C:/Qt/5.12.6/mingw73_64/bin/moc.exe
 	C:\Qt\5.12.6\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/mi/Desktop/cpp/qt_/build-game_wihout_graph-Desktop_x86_windows_msys_pe_64bit-Debug/debug/moc_predefs.h -IC:/Qt/5.12.6/mingw73_64/mkspecs/win32-g++ -IC:/Users/mi/Desktop/cpp/qt_/game_wihout_graph -IC:/Qt/5.12.6/mingw73_64/include -IC:/Qt/5.12.6/mingw73_64/include/QtWidgets -IC:/Qt/5.12.6/mingw73_64/include/QtGui -IC:/Qt/5.12.6/mingw73_64/include/QtANGLE -IC:/Qt/5.12.6/mingw73_64/include/QtCore -I. -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ..\game_wihout_graph\player.h -o debug\moc_player.cpp
@@ -675,6 +681,8 @@ debug/bullet.o: ../game_wihout_graph/bullet.cpp ../game_wihout_graph/bullet.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		../game_wihout_graph/enemy.h \
 		../game_wihout_graph/game.h \
 		../game_wihout_graph/player.h \
@@ -808,6 +816,8 @@ debug/enemy.o: ../game_wihout_graph/enemy.cpp ../game_wihout_graph/enemy.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		../game_wihout_graph/game.h \
 		../game_wihout_graph/player.h \
 		../game_wihout_graph/score.h
@@ -940,6 +950,8 @@ debug/game.o: ../game_wihout_graph/game.cpp ../game_wihout_graph/game.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		../game_wihout_graph/player.h \
 		../game_wihout_graph/score.h \
 		../game_wihout_graph/enemy.h
@@ -1079,6 +1091,8 @@ debug/main.o: ../game_wihout_graph/main.cpp C:/Qt/5.12.6/mingw73_64/include/QtWi
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		../game_wihout_graph/player.h \
 		../game_wihout_graph/score.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\game_wihout_graph\main.cpp
@@ -1210,6 +1224,8 @@ debug/player.o: ../game_wihout_graph/player.cpp ../game_wihout_graph/player.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
 		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QKeyEvent \
 		../game_wihout_graph/bullet.h \
 		../game_wihout_graph/enemy.h
@@ -1341,7 +1357,9 @@ debug/score.o: ../game_wihout_graph/score.cpp ../game_wihout_graph/score.h \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QList \
 		C:/Qt/5.12.6/mingw73_64/include/QtCore/QDebug \
 		C:/Qt/5.12.6/mingw73_64/include/QtGui/QFont \
-		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem
+		C:/Qt/5.12.6/mingw73_64/include/QtWidgets/QGraphicsPixmapItem \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QBrush \
+		C:/Qt/5.12.6/mingw73_64/include/QtGui/QImage
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\score.o ..\game_wihout_graph\score.cpp
 
 debug/qrc_src.o: debug/qrc_src.cpp 

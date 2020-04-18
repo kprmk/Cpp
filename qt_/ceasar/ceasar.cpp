@@ -24,9 +24,7 @@ void ceasar::code()
         if (input[i] >= 'a' && input[i] <= 'z')
         {
             if ((int)(input[i] + shift) > 122)
-            {
                 input[i] += shift - 26;
-            }
             else
                 input[i] += shift;
         }
@@ -45,9 +43,7 @@ void ceasar::decode()
         if (input[i] >= 'a' && input[i] <= 'z')
         {
             if (input[i] - shift < 97)
-            {
                 input[i] += -shift + 26;
-            }
             else
                 input[i] -= shift;
         }

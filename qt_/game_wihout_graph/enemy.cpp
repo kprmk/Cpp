@@ -3,14 +3,12 @@
 
 extern Game * game;
 
-Enemy::Enemy(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
+Enemy::Enemy(QGraphicsItem *parent): QObject(),
+    QGraphicsPixmapItem(parent)
 {
-    //set random x position
     int random_number = rand() % 700;
     setPos(random_number,0);
 
-    // drew the rect
-//    setRect(0,0,100,100);
     setPixmap(QPixmap(":/pics/enemy.png"));
 
     // make/connect a timer to move() the enemy every so often
@@ -24,7 +22,7 @@ Enemy::Enemy(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
 void Enemy::move()
 {
     // move enemy down
-    setPos(x(),y()+5);
+    setPos(x(),y() + 5);
 
     // destroy enemy when it goes out of the screen
     if (pos().y() > 600)
@@ -33,3 +31,5 @@ void Enemy::move()
         delete this;
     }
 }
+
+

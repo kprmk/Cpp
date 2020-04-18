@@ -3,7 +3,8 @@
 
 #include "headings_libs.h"
 
-class Enemy: public QObject,public QGraphicsPixmapItem
+class Enemy: public QObject,
+        public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
@@ -13,3 +14,5 @@ public slots:
 };
 
 #endif // ENEMY_H
+
+

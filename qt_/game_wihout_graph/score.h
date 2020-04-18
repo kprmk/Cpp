@@ -3,7 +3,8 @@
 
 #include "headings_libs.h"
 
-class Score: public QGraphicsTextItem{
+class Score: public QGraphicsTextItem
+{
 public:
     Score(QGraphicsItem * parent=0);
     void increase();
@@ -13,3 +14,5 @@ private:
 };
 
 #endif // SCORE_H
+
+

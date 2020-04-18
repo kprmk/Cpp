@@ -1,16 +1,12 @@
 #include "bullet.h"
-#include <QTimer>
-#include <QGraphicsScene>
-#include <QList>
 #include "enemy.h"
 #include "game.h"
 
-extern Game * game; // there is an external global object called game
+extern Game * game;
 
-Bullet::Bullet(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
+Bullet::Bullet(QGraphicsItem *parent):
+    QObject(), QGraphicsPixmapItem(parent)
 {
-    // drew the bullet (a rectangle)
-//    setRect(0,0,10,50);
     setPixmap(QPixmap(":/pics/bul.png"));
 
     // make/connect a timer to move() the bullet every so often

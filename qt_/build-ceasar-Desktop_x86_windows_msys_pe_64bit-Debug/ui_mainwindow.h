@@ -40,7 +40,7 @@ public:
     QLabel *shift;
     QSpinBox *spinBox;
     QPushButton *pushButton;
-    QLabel *pic;
+    QLabel *pix;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -53,7 +53,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(0, 0, 881, 481));
+        groupBox->setGeometry(QRect(30, 30, 881, 481));
         res = new QLabel(groupBox);
         res->setObjectName(QString::fromUtf8("res"));
         res->setGeometry(QRect(30, 260, 441, 151));
@@ -101,9 +101,9 @@ public:
 
         verticalLayout->addWidget(pushButton);
 
-        pic = new QLabel(groupBox);
-        pic->setObjectName(QString::fromUtf8("pic"));
-        pic->setGeometry(QRect(570, 70, 191, 331));
+        pix = new QLabel(groupBox);
+        pix->setObjectName(QString::fromUtf8("pix"));
+        pix->setGeometry(QRect(470, 20, 361, 401));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -126,7 +126,7 @@ public:
         Input_string->setText(QApplication::translate("MainWindow", "Input string", nullptr));
         shift->setText(QApplication::translate("MainWindow", "Shift", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Cript!", nullptr));
-        pic->setText(QString());
+        pix->setText(QString());
     } // retranslateUi
 
 };

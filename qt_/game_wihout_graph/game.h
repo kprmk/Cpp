@@ -5,7 +5,8 @@
 #include "player.h"
 #include "score.h"
 
-class Game: public QGraphicsView{
+class Game: public QGraphicsView
+{
 public:
     Game(QWidget * parent=0);
 
@@ -15,3 +16,5 @@ public:
 };
 
 #endif // GAME_H
+
+

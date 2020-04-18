@@ -3,7 +3,8 @@
 
 #include "headings_libs.h"
 
-class Player:public QObject, public QGraphicsPixmapItem
+class Player:public QObject,
+        public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
@@ -14,3 +15,5 @@ public slots:
 };
 
 #endif // PLAYER_H
+
+

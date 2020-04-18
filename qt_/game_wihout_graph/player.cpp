@@ -1,17 +1,15 @@
 #include "player.h"
-#include <QGraphicsScene>
-#include <QKeyEvent>
 #include "bullet.h"
 #include "enemy.h"
 
-Player::Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
+Player::Player(QGraphicsItem *parent):
+    QGraphicsPixmapItem(parent)
 {
     setPixmap(QPixmap(":/pics/player.png"));
 }
 
 void Player::keyPressEvent(QKeyEvent *event)
 {
-    // move the player left and right
     if (event->key() == Qt::Key_Left){
         if (pos().x() > 0)
         setPos(x()-10,y());
@@ -20,7 +18,6 @@ void Player::keyPressEvent(QKeyEvent *event)
         if (pos().x() + 100 < 800)
         setPos(x()+10,y());
     }
-    // shoot with the spacebar
     else if (event->key() == Qt::Key_Space){
         // create a bullet
         Bullet * bullet = new Bullet();
@@ -35,3 +32,5 @@ void Player::spawn()
     Enemy * enemy = new Enemy();
     scene()->addItem(enemy);
 }
+
+

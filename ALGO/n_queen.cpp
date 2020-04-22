@@ -3,7 +3,7 @@
 #include <ctime>
 #include <cstdio>
 
-#define N 13
+#define N 8
 using namespace std;
 
 bool col[N];

@@ -11,7 +11,7 @@ Bullet::Bullet(QGraphicsItem *parent):
 
     // make/connect a timer to move() the bullet every so often
     QTimer * timer = new QTimer(this);
-    connect(timer,SIGNAL(timeout()),this,SLOT(move()));
+    connect(timer, SIGNAL(timeout()), this, SLOT(move()));
 
     // start the timer
     timer->start(50);
@@ -44,7 +44,7 @@ void Bullet::move()
     }
 
     // if there was no collision with an Enemy, move the bullet forward
-    setPos(x(),y() - 10);
+    setPos(x(), y() - 10);
 
     // if the bullet is off the screen, destroy it
     if (pos().y() + this->pixmap().height() < 0)

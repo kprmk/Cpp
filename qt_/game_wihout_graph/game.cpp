@@ -29,7 +29,7 @@ Game::Game(QWidget *parent)
 
     // spawn enemies
     QTimer * timer = new QTimer();
-    QObject::connect(timer,SIGNAL(timeout()),player,SLOT(spawn()));
+    QObject::connect(timer, SIGNAL(timeout()), player,SLOT(spawn()));
     timer->start(2000);
 
     show();

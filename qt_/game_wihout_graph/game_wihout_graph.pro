@@ -40,4 +40,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     pic.qrc \
-    pics/src.qrc
+    pics/src.qrc \
+    src.qrc

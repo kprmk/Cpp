@@ -28,11 +28,11 @@ int main(int argc, char *argv[])
             {
                 QPixmap pix(":/img/q.png");
                 pix = pix.scaled(W / N, H / N);
-                lbl->setStyleSheet("background-color: #0; ");
+                lbl->setStyleSheet("background-color: #00FFFF; ");
                 lbl->setPixmap(pix);
             }
             else
-                lbl->setStyleSheet("background-color: #00ffff");
+                lbl->setStyleSheet("background-color: #ffff00");
             layout->addWidget(lbl, i, j);
         }
     }

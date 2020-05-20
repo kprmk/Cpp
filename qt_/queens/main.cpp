@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     QGridLayout *layout = new QGridLayout;
     srand(time(0));
 
-    queen test(N);
+    queen test(N, 100);
     test.solve();
     auto x = test.getter_ans()[rand() % test.getter_counter()];
 

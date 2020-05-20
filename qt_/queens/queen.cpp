@@ -1,8 +1,9 @@
 #include "queen.h"
 
-queen::queen(int n): x(n, 0), d1(2 * n - 1, 0), d2(2 * n - 1, 0)
+queen::queen(int n, int nums): x(n, 0), d1(2 * n - 1, 0), d2(2 * n - 1, 0)
 {
     this->size = n;
+    this->size_of_pic = nums;
     this->counter = 0;
 }
 

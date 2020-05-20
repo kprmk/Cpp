@@ -14,6 +14,9 @@ class queen
 private:
     int size, counter;
     map<int, vector<int>> ans;
+
+    const int size_of_pic;
+
     vector<int> x;
     vector<int> d1;
     vector<int> d2;

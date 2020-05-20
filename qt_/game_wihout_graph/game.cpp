@@ -1,7 +1,7 @@
 #include "game.h"
 #include "enemy.h"
 
-Game::Game(QWidget *parent)
+Game::Game(QWidget *parent): QWidg
 {
     // create the scene
     scene = new QGraphicsScene();
@@ -17,20 +17,20 @@ Game::Game(QWidget *parent)
     setFixedSize(800,600);
 
     // create the player
-    player = new Player();
-    player->setPos(400,500);
-    player->setFlag(QGraphicsItem::ItemIsFocusable);
-    player->setFocus();
+//    player = new Player();
+//    player->setPos(400,500);
+//    player->setFlag(QGraphicsItem::ItemIsFocusable);
+//    player->setFocus();
 
-    scene->addItem(player);
+//    scene->addItem(player);
 
-    score = new Score();
-    scene->addItem(score);
+//    score = new Score();
+//    scene->addItem(score);
 
     // spawn enemies
-    QTimer * timer = new QTimer();
-    QObject::connect(timer, SIGNAL(timeout()), player,SLOT(spawn()));
-    timer->start(2000);
+//    QTimer * timer = new QTimer();
+//    QObject::connect(timer, SIGNAL(timeout()), player,SLOT(spawn()));
+//    timer->start(2000);
 
     show();
 }

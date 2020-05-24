@@ -25,7 +25,7 @@ void MainWindow::on_Add_clicked()
         return;
     }
 
-    if(ui->line_name->text() == "" || ui->line_number->text() == "+")
+    if(ui->line_name->text() == "" || ui->line_name->text() == "")
     {
         QMessageBox::warning(this, "Error" , "You don not enter any data for adding" );
         return;
@@ -44,16 +44,18 @@ void MainWindow::on_Add_clicked()
         return;
     }
 
+
     QFile file(current_file);
     if(!file.open(QIODevice::Append))
     {
         QMessageBox::warning(this, "Error" , "File does not save : " + file.errorString());
         return;
     }
-    new_added = ui->line_name->text() + '\t' + ui->line_number->text() + '\n';
+    new_added = ui->line_name->text() + ' ' + ui->line_number->text() + '\n';
     QTextStream out (&file);
     out << new_added;
     ui->line_name->clear();
+    ui->line_number->clear();
     ui->line_number->setText("+");
     file.close();
     this->show_data_from_file();
@@ -70,14 +72,15 @@ void MainWindow::on_Read_clicked()
         return;
     }
     setWindowTitle(fileName);
-    QTextStream sm (&file);
-    QString cur = sm.readAll();
+    QTextStream in (&file);
+    QString cur = in.readAll();
     ui->text_area_for_nums->setText(cur);
     file.close();
 }
 
 void MainWindow::on_Delete_clicked()
 {
+
     QFile file (current_file);
 
     if(!file.open(QIODevice::WriteOnly))
@@ -97,10 +100,7 @@ void MainWindow::show_data_from_file()
 {
     QFile file (current_file);
     if(!file.open(QIODevice::ReadOnly))
-    {
         QMessageBox::warning(this, "Error" , "File does not ");
-        return;
-    }
     QTextStream st (&file);
     ui->text_area_for_nums->setText(st.readAll());
 }

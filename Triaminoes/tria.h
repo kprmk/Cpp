@@ -13,16 +13,18 @@ class tria
 		char **map;
 		const int opts[6][4][2] = {
 								{{1, 1}, {0, 0}, {0, 1}, {1, 1}},
-								{{-1, 1}, {0, 1}, {1, 1}, {1, 0}},
-								{{1, 1}, {1, 1}, {1, 0}, {0, 0}},
-								{{1, 1}, {1, 0}, {0, 0}, {0, 1}},
+								{{1, 0}, {0, 1}, {1, 1}, {1, 1}},
+								{{1, 1}, {1, 0}, {0, 0}, {1, 1}},
+								{{1, 1}, {1, 0}, {0, 0}, {1, 1}},
 								{{0, 2}, {0, 0}, {0, 1}, {0, 2}},
 								{{2, 0}, {0, 0}, {1, 0}, {2, 0}}
 								};
 		void print();
 		int solver(int y = 0);
-		int solver2(int y = 0);
+		int solver_2(int y = 0);
+		int solver_for(int y = 0);
+
 	public:
-		tria(int width=2, int height=9);
+		tria(int width=3, int height=9);
 		~tria();
 };

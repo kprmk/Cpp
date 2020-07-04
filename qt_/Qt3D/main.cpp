@@ -40,24 +40,23 @@ Qt3DCore::QEntity *createScene()
 {
     Qt3DCore::QEntity *resultEntity = new Qt3DCore::QEntity;
 
-//    Qt3DExtras::QCuboidMesh *cuboidMesh = new Qt3DExtras::QCuboidMesh(resultEntity);
-    Qt3DExtras::QTorusMesh *torusMesh = new Qt3DExtras::QTorusMesh(resultEntity);
+    Qt3DExtras::QCuboidMesh *torusMesh = new Qt3DExtras::QCuboidMesh(resultEntity);
+//    Qt3DExtras::QTorusMesh *torusMesh = new Qt3DExtras::QTorusMesh(resultEntity);
 
-    torusMesh->setRadius(15.0f);
-    torusMesh->setMinorRadius(5.0f);
-    torusMesh->setSlices(50);
-    torusMesh->setRings(50);
+//    torusMesh->setRadius(15.0f);
+//    torusMesh->setMinorRadius(5.0f);
+//    torusMesh->setSlices(50);
+//    torusMesh->setRings(50);
 
-//    cuboidMesh->setXExtent(10);
-//    cuboidMesh->setYExtent(10);
-//    cuboidMesh->setZExtent(10);
+    torusMesh->setXExtent(20);
+    torusMesh->setYExtent(20);
+    torusMesh->setZExtent(20);
 
     Qt3DExtras::QPhongMaterial * torusMaterial = new Qt3DExtras::QPhongMaterial(resultEntity);
-    torusMaterial->setDiffuse(QColor(255, 255, 0));
+    torusMaterial->setDiffuse(QColor(0, 255, 255));
 
     Qt3DCore::QTransform * torusTranform = new Qt3DCore::QTransform(resultEntity);
 
-//    resultEntity->addComponent(cuboidMesh);
     resultEntity->addComponent(torusMesh);
     resultEntity->addComponent(torusMaterial);
     resultEntity->addComponent(torusTranform);

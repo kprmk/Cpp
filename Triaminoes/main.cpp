@@ -5,7 +5,7 @@
 
 int main()
 {
-	tria(3, 9);
+	tria(9, 4);
 	
 	return (0);
 }
